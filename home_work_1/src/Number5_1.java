@@ -19,7 +19,7 @@ public class Number5_1 {
             x = ++x;
         }
         if (x==0){
-            System.out.println("Добрый день а вы кто");
+            System.out.println("Добрый день а вы кто?");
         }
 
     }

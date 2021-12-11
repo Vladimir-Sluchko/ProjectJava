@@ -15,7 +15,7 @@ public class Number5_2 {
              System.out.println("Я тебя так долго ждал");
              }
         else {
-            System.out.println("Добрый день а вы кто");
+            System.out.println("Добрый день а вы кто?");
         }
 
     }
