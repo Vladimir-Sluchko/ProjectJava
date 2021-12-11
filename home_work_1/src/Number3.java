@@ -7,7 +7,7 @@ public class Number3 {
         System.out.println(Math.round(1.3));// округляет по правилам математики до целого числа
         System.out.println(Math.floor(1.8));// округляет в наименьшую сторону до целого числа
         System.out.println(Math.ceil(1.2));// округляет в большую сторону до целого числа
-        
+
 
     };
 }
