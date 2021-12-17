@@ -1,2 +1,4 @@
-package Lesson4;public class CiklFor {
+package Lesson4;
+
+public class CiklFor {
 }
