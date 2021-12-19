@@ -9,7 +9,7 @@ public class Number1_4_3 {
         long a = 1;
         long mnojit = -19;
         boolean x = true;
-        for (int i = 0;x == true; i++ ){
+        while(x == true){
             try {
                 a = Math.multiplyExact(a,mnojit);
             }

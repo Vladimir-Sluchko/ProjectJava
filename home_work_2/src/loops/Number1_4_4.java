@@ -13,7 +13,7 @@ public class Number1_4_4 {
         long mnojit = rnd.nextLong();
         System.out.println("Случайное число " + mnojit);
         boolean x = true;
-        for (int i = 0;x == true; i++ ){
+        while(x == true){
             try {
                 a = Math.multiplyExact(a,mnojit);
             }

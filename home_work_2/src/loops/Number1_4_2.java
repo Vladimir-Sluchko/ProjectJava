@@ -8,13 +8,15 @@ public class Number1_4_2 {
     public static void main(String[] args) {
         long a = 1;
         long mnojit = 188;
-        for (int i = 0;a > 0; i++ ){
+        boolean x = true;
+        while(x == true){
             try {
                 a = Math.multiplyExact(a,mnojit);
             }
             catch (ArithmeticException ext){
                 System.out.println("Максимальное значение до переполнения: " + a);
                 a = a * mnojit;
+                x = false;
                 System.out.println("Максимальное значение после переполнения: " + a);
             }
         }
