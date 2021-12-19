@@ -28,7 +28,6 @@ public class Number1_3 {
             }
             step = scan.nextInt();
         } while (step <= 0);
-        System.out.println("Ответ " + Math.pow(chislo,step));
         double n = 1;
         double vozvedChislo = 1;
 
@@ -36,7 +35,7 @@ public class Number1_3 {
             n = chislo * n;
             vozvedChislo = chislo * n;
         }
-        System.out.println(chislo + " ^ " + step + " = " +  new DecimalFormat( "###,###.###" ).format(vozvedChislo));
+        System.out.println(chislo + " ^ " + step + " = " +  new DecimalFormat( "###,###.##" ).format(vozvedChislo));
 
     }
 }

@@ -1,7 +1,11 @@
-import java.util.Scanner;
+// 1.4.* Умножать число long a = 1; пока не произойдёт переполнение. В конце в консоль вывести сообщение со значением до
+// переполнения и после переполнения. Умножать на:
+//    	1.4.1. 3
 
-public class prov {
-    public static void main(String[] args){
+package loops;
+
+public class Number1_4_1 {
+    public static void main(String[] args) {
         long a = 1;
         long mnojit = 3;
         for (int i = 0;a > 0; i++ ){

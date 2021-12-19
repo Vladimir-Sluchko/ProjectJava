@@ -1,9 +1,13 @@
-import java.util.Scanner;
+// 1.4.* Умножать число long a = 1; пока не произойдёт переполнение. В конце в консоль вывести сообщение со значением до
+// переполнения и после переполнения. Умножать на:
+// 1.4.2. 188
 
-public class prov {
-    public static void main(String[] args){
+package loops;
+
+public class Number1_4_2 {
+    public static void main(String[] args) {
         long a = 1;
-        long mnojit = 3;
+        long mnojit = 188;
         for (int i = 0;a > 0; i++ ){
             try {
                 a = Math.multiplyExact(a,mnojit);
