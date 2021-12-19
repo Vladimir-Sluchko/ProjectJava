@@ -9,41 +9,36 @@ import java.util.Scanner;
 
 public class Number1_2 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
         long number;
-        do {
-            System.out.println("Введе целое положительное число!");
-            while (!scan.hasNextLong()) {
-                if (scan.hasNextDouble()) {
-                    System.out.println("Введено не целое число");
-                    System.out.println("Введе целое положительное число!");
-                } else {
-                    System.out.println("Введено не число");
-                    System.out.println("Введе целое положительное число!");
-                }
-                scan.next();
-            }
-            number = scan.nextLong();
-        } while (number <= 0);
-        long n = 1;
-        long a;
-        long [] data = new long[19];
-        int i;
-        for (i = 0; number > 0; i++){
-            a = number % 10;
-            data [i] = a;
-            n = n * a;
-            number = number / 10;
+        long chislo;
+        Double drobn;
+        try {
+            chislo = Long.parseLong(args[0]);
+            System.out.println("Введено число " + chislo);
         }
-        i--;
-        for (int j = i; j >= 0; j--){
-            System.out.print(data[j]);
-            if (j > 0) {
+        catch (NumberFormatException nfe) {
+            try {
+                drobn = Double.parseDouble(args[0]);
+                System.out.println("Введено не целое число");
+            }
+            catch (NumberFormatException nfe2) {
+                System.out.println("Введено не число");
+                return;
+            }
+        }
+        chislo = Long.parseLong(args[0]);
+        char[] chars = args[0].toCharArray();
+        long rezult = 1;
+        for (int i = 0; chislo > 0; i++){
+            number = chislo % 10;
+            System.out.print(chars[i]);
+            chislo  = chislo / 10;
+            if (chislo != 0){
                 System.out.print(" * ");
-            } else {
-                System.out.print(" = ");
             }
+            rezult = rezult * number;
         }
-        System.out.print(n);
+        System.out.println(" = " + rezult);
+
     }
 }

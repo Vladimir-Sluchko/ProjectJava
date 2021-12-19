@@ -10,40 +10,26 @@ import java.util.Scanner;
 
 public class Number1_1 {
     public static void main(String[] args) {
-        long n1;
-        long n2 = 1;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Введите число n, чтобы перемножить целые числа от 1 до n ");
-        String stroka = scan.next();
+        long n = 1;
+        System.out.println("Число которое записано в аргументе " + args[0]);
         try {
-            long chislo =Long.parseLong(stroka.strip());
+            long chislo =Long.parseLong(args[0]);
         }
         catch (NumberFormatException nfe) {
             System.out.println("Пользователь ввёл некорректные данные.");
             return;
         }
-        long chislo =Long.parseLong(stroka.strip());
+        long chislo =Long.parseLong(args[0].strip());
         if (chislo > 20) {
             System.out.println("Значение итоговой переменной переполнено, попробуйте заново и введите число меньше!");
             return;
         }
-        System.out.println("Вы ввели число n = " + chislo);
-        /*for (long i = 1; i <= chislo; i++){
-            n1 = i;
-            n2 = n2 * n1;
-            if (n2 < 0) {
-                System.out.println("Значение итоговой переменной переполнено, попробуйте заново и введите число меньше");
-                return;
-            }
-        }
-        n2 = 1;*/
-        for (long i = 1; i <= chislo; i++){
-            n1 = i;
-            n2 = n2 * n1;
+        for (int i = 1; i <= chislo; i++){
+            n = n * i;
             System.out.print(i);
             if (i != chislo){
                 System.out.print(" * ");
-            } else System.out.print(" = " + n2);
+            } else System.out.print(" = " + n);
         }
 
 

@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 public class prov {
-    public static void main(String[] args){
-        long n = 78999;
-        String number = String.valueOf(n);
-        for (int i = 0; i < number.length(); i++) {
-            int j = Character.digit(number.charAt(i), 10);
-            Math.pow(j, 2);
-            System.out.println(j);
+    public static void main(String[] args)
+            throws InterruptedException {
+        String t = "Текст который необходимо переписать.";
+        System.out.print(t);
+        for (int i = 0; i < t.length(); i++) {
+            Thread.sleep(25);
+            System.out.print("\b");
         }
 
+        System.out.print("Новый текст.");
     }
 }
