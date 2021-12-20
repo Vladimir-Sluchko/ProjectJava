@@ -1,3 +1,5 @@
+//1.5. Вывести таблицу умножения в консоль. В консоли должно получиться также как и на картинке
+// (динозаврика рисовать не надо): https://www.dropbox.com/s/ibakfuppvy2w32g/multiplication_table.jpeg?dl=0
 package loops;
 
 public class Number1_5 {
