@@ -107,8 +107,8 @@ public class Number2_2 {
     }
     public static void main(String[] args) {
 
-        //printAll();
-        //printEvrySecond();
+        printAll();
+        printEvrySecond();
         printInReversOrder();
 
 
