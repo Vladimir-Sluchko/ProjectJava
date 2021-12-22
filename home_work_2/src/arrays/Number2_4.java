@@ -105,19 +105,18 @@ public class Number2_4 {
             System.out.print(data[i] + " ");
         }
         System.out.println("");
-        System.out.println("Укажите нижнюю границу массива:");
+        System.out.println("Укажите нижнюю границу массива, в котором необъодимо удалить элементы:");
         Scanner scan = new Scanner(System.in);
         int bottomBound = scan.nextInt();
-        System.out.println("Укажите верхнюю границу массива:");
+        System.out.println("Укажите верхнюю границу массива, в котором необъодимо удалить элементы:");
         int upperBound = scan.nextInt();
-        for (int i = 0; i < data.length; i++) {
-            if (bottomBound <= data[i] && data[i] <= upperBound){
-                for (int j = i; j < data.length -1;j++){
-                    data[j] = data[j+1];
-                    i--;
+        for (int i = 0; i < data.length;) {
+            if (data[i] >= bottomBound && data[i] <= upperBound){
+                for (int j = i; j < data.length - 1; j++) {
+                    data[j] = data[j + 1];
                 }
-            }
-            data[data.length - 1] = 0;
+                data[data.length-1] = 0;
+                } else i++;
         }
         for (int i:data) {
             System.out.print(i + " ");
