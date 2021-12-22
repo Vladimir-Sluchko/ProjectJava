@@ -125,16 +125,35 @@ public class Number2_4 {
 
     }
 
+    //		2.4.6. Сумма цифр массива
+    public static void sumOfAllDigits (int size,int maxValueExcxlusion ){
+        int [] data = arrayRandom(size,maxValueExcxlusion);
+        System.out.println("Сформированный массив из случайных чисел");
+        for (int i: data) {
+            System.out.print(i + " ");
+        }
+        int sum =0;
+        for (int i:data) {
+            while (i > 0){
+                sum = sum + i%10;
+                i /=10;
+            }
+        }
+        System.out.println("");
+        System.out.println("Сумма элементов массива " + sum);
+    }
+
 
 
 
     public static void main(String[] args) {
 
-        //sumEventPositive(10,10);
-        //maxElemWithEventIndex(10,  100);
-        //maxOfMedium(10,10);
-        //twoSmollestElemets(10,10);
+        sumEventPositive(10,10);
+        maxElemWithEventIndex(10,  100);
+        maxOfMedium(10,10);
+        twoSmollestElemets(10,10);
         compressArrayDelElement(10,10);
+        sumOfAllDigits(10,10);
 
 
     }
