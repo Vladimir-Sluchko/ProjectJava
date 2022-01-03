@@ -13,7 +13,9 @@
 //	в консоль результат.
 package calcs.simple;
 
-public class CalculatorWithOperator {
+import calcs.api.ICalculator;
+
+public class CalculatorWithOperator implements ICalculator {
     //деление
     public double devision (double a,double b){
         return a / b;

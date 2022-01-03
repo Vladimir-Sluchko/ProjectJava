@@ -12,7 +12,9 @@
 //	в консоль результат.
 package calcs.simple;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator{
+import calcs.api.ICalculator;
+
+public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator {
     @Override
     public double exponentiation(double a, int b) {
         return Math.pow(a,b);

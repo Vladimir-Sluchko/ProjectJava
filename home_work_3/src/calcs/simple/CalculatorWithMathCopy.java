@@ -9,7 +9,9 @@
 //	создать экземпляр калькулятора и используя методы из данного экземпляра посчитать выражения из задания 1. Вывести в консоль результат.
 package calcs.simple;
 
-public class CalculatorWithMathCopy {
+import calcs.api.ICalculator;
+
+public class CalculatorWithMathCopy implements ICalculator {
     //деление
     public double devision (double a,double b){
         return a / b;
