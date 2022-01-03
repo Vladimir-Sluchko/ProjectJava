@@ -1,6 +1,6 @@
-package oop.dto;
+package Lesson5.oop.dto;
 
-public class Student {
+public class Human {
     private String name;
     private int age;
 
@@ -22,7 +22,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Human{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
