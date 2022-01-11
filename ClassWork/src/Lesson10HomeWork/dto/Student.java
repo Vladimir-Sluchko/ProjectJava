@@ -2,7 +2,7 @@ package Lesson10HomeWork.dto;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private int number;
     private String name;
     private int age;
@@ -56,6 +56,11 @@ public class Student {
 
     public void setPartOlimpiad(boolean partOlimpiad) {
         this.partOlimpiad = partOlimpiad;
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return this.number - o.number;
     }
 
     @Override
