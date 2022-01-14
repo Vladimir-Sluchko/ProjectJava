@@ -79,9 +79,9 @@ public class DataContainer<T> {
         }
     }
 
-    public static <G extends Comparable> void sort(DataContainer<G> container) {
+    public static <G extends Comparable> void sort3(DataContainer<G> container) {
         for (int i = 0; i < container.data.length; i++) {
-            for (int j = 0; j < container.data.length; j++) {
+            for (int j = 0; j < container.data.length - 1; j++) {
                 if(container.data[j].compareTo(container.data[j +1]) > 0){
                     G data3 = container.data[j];
                     container.data[j] = container.data[j + 1];

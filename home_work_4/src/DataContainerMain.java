@@ -23,8 +23,13 @@ public class DataContainerMain {
         System.out.println(text4); //Давай потом
         System.out.println(container.getItems());
         System.out.println(container.toString());
+        DataContainer.sort3(container);
+        //container.sort(String::compareTo);
+        System.out.println(container.toString());
         //container.delete(text1);
         //sout(container.get(index1)); //Как дела
+        DataContainer<String> container1 = new DataContainer<>(new String[]{"Привет",null, "Как дела", });
+        System.out.println(container1.toString());
 
     }
 }
