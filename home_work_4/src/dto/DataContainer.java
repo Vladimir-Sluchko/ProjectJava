@@ -67,7 +67,7 @@ public class DataContainer<T> {
     public void setData(T[] data) {
         this.data = data;
     }
-    /*public void sort(Comparator<T> comparator){
+    public void sort(Comparator<T> comparator){
         for (int i = 0; i < data.length -1 ; i++) {
             for (int j = 0; j < data.length - 1; j++) {
                 if (comparator.compare(data[j],data[j+1]) > 0){
@@ -77,7 +77,7 @@ public class DataContainer<T> {
                 }
             }
         }
-    }*/
+    }
 
     public static <G extends Comparable> void sort(DataContainer<G> container) {
         for (int i = 0; i < container.data.length; i++) {
