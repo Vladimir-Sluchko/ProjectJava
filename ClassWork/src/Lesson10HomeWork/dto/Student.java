@@ -71,6 +71,7 @@ public class Student implements Comparable<Student> {
         return number == student.number && age == student.age && Double.compare(student.grade, grade) == 0 && partOlimpiad == student.partOlimpiad && Objects.equals(name, student.name);
     }
 
+
     @Override
     public int hashCode() {
         return Objects.hash(number, name, age, grade, partOlimpiad);

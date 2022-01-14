@@ -16,6 +16,9 @@ public class StudentMain3 {
             int number = 1 + i;
             data.add(new Student(number,String.valueOf(randomName()),Integer.valueOf(randomAge(15,17)),Double.valueOf(randomGrade(0.0,10.0)),Boolean.valueOf(randomPartOlimpiad())));
         }
+        data.remove(7);
+        System.out.println(data);
+
 
      System.out.println("_________________________________________________________ ");
         data.sort(new StudentAgeFromGrade());
