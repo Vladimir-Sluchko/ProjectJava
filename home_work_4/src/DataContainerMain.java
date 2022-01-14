@@ -23,7 +23,6 @@ public class DataContainerMain {
         System.out.println(text4); //Давай потом
         System.out.println(container.getItems());
         System.out.println(container.toString());
-        System.out.println(DataContainer.sort());
         //container.delete(text1);
         //sout(container.get(index1)); //Как дела
 
