@@ -7,6 +7,7 @@ import Lesson10HomeWork.dto.Student;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Supplier;
 
 import static Lesson10HomeWork.Service.RandomeStudentService.*;
 
@@ -41,10 +42,11 @@ public class StudentMain1 {
                 sumAge = sumAge + student.getAge();
             }
         }
+
         //System.out.println("Отфильтрованная коллекция студентов (Student) " + "Колличество студентов в коллекции " + data2.size());
         //System.out.println(data2);
         System.out.println("Колличество студентов в коллекции " + data2.size());
-        System.out.println("Средний возраст отсортированных студентов " + sumAge / data2.size());
+        System.out.println("Средний возраст отсортированных студентов " + 1.0*(sumAge / data2.size()));
         /*
         * StudentNameComparator() класс компоратор для сортировки поля имени по алфавиту
         */
@@ -96,9 +98,6 @@ public class StudentMain1 {
             }
 
         }
-
-
-
     }
 
 
