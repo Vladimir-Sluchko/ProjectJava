@@ -40,6 +40,16 @@ public class Main {
         countNoRegist = caseConversion.search(text,"мир");
         System.out.println("Слово \"мир\" встречается в тексте " + countNoRegist + " раз без учета регистра");
 
+        System.out.println("С помощью класса RegExSearch ");
+        System.out.println("Введите слово которое вы хотите проверить на количество повторов с учетом регистра ");
+        RegExSearch regExSearch = new RegExSearch();
+        //String wordSeach = scanner.next();
+        String wordSeach2 = "Война";
+        long countRegist2 = regExSearch.search(text,wordSeach2);
+        System.out.println("Слово " + wordSeach2 + " встречается в тексте " + countRegist2 + " раз с учетом регистра");
+
+
+
 
 
 
