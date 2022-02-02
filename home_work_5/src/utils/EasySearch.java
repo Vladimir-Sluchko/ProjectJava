@@ -4,7 +4,7 @@ import api.ISearchEngine;
 
 public class EasySearch implements ISearchEngine {
 
-    private char[] removeCharacters = ".?,;:'\")\n\t( ".toCharArray();
+    private char[] spliterCharter = ".?,;!:'\")\n\t( ".toCharArray();
 
     @Override
     public long search(String text, String word) {
@@ -38,15 +38,20 @@ public class EasySearch implements ISearchEngine {
         if (fromIndex == text.length() - worldLength){
             chekAfter = true;
         }
-        for (char simv:this.removeCharacters){
+        if(chekAfter && chekBefore){
+            return true;
+        }
+        /*char charakterBefore = text.charAt(fromIndex - 1);
+        char charakterAfter = text.charAt(fromIndex + worldLength);*/
+        for (char simv:this.spliterCharter){
+            if(chekAfter && chekBefore){
+                break;
+            }
             if (!chekBefore && (text.charAt(fromIndex - 1) == simv)){
                 chekBefore = true;
             }
             if (!chekAfter && (text.charAt(fromIndex + worldLength) == simv)){
                 chekAfter = true;
-            }
-            if(chekAfter && chekBefore){
-                break;
             }
         }
         return chekAfter && chekBefore;
