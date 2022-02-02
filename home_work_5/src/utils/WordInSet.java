@@ -37,5 +37,4 @@ public class WordInSet {
         this.text = deleteSimvol();
         return setWord(text);
     }
-
 }
